@@ -161,7 +161,9 @@ header,
 .attraction-img {
   width: 100%;
 }
-
+.attraction-img:hover {
+  transform: scale(1.2);
+}
 .tour-guide-profiles img {
   height: 25rem;
   width: 25rem;
