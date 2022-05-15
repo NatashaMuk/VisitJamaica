@@ -117,18 +117,19 @@ img {
 }
 /******************************************HEADER SECTION*******************************************/
 
-
 header {
   height: 100vh;
   background-image: linear-gradient(
       rgba(53, 82, 66, 0.5),
       rgba(47, 80, 63, 0.6)
     ),
-    url("../images/hero.jpg");
+    url("hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 15rem;
+  background-position: center;
+  /* padding-top: 15rem; */
   color: #222;
+  position: relative;
 }
 
 .container-hero {
@@ -136,7 +137,11 @@ header {
   opacity: 0.7;
   padding: 3rem;
   width: 50%;
-  margin: 0 auto;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section,
