@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 400;
   color: #555353;
   background-color: #f3ede6;
@@ -120,10 +120,10 @@ img {
 header {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(34, 34, 34, 0.1),
-      rgba(34, 34, 34, 0.2)
+      rgba(88, 88, 88, 0.2),
+      rgba(88, 88, 88, 0.2)
     ),
-    url(hero.jpg");
+    url("hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 15rem;
@@ -133,10 +133,13 @@ header {
 .container-hero {
   background-color: #f5f5f5;
   opacity: 0.7;
-  padding: 2em;
+  padding: 2.5rem;
   width: 50%;
+  height: 35vh;
+
   margin: 0 auto;
 }
+
 section,
 header,
 #attractions {
@@ -238,7 +241,7 @@ a:focus {
     margin-bottom: 2rem;
   }
   .container-hero {
-    width: 75%;
+    width: 60%;
   }
 
   .flex-container {
