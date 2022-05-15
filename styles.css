@@ -47,11 +47,15 @@ h1::before {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   line-height: 1.1;
   color: #f08c00;
   margin-bottom: 6rem;
   position: relative;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 blockquote {
   font-style: italic;
@@ -208,7 +212,7 @@ a:focus {
 
 @media (max-width: 980px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
   h1::before {
     position: absolute;
@@ -216,10 +220,10 @@ a:focus {
     left: 5rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   header {
-    padding-top: 45rem;
+    padding-top: 20rem;
   }
 
   .tour-guide-profiles,
