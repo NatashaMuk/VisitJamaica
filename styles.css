@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 400;
   color: #555353;
   background-color: #f3ede6;
@@ -107,6 +107,7 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
 .grid-2-col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -118,8 +119,11 @@ img {
 
 header {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url("hero.jpg");
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.1),
+      rgba(34, 34, 34, 0.2)
+    ),
+    url(hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 15rem;
@@ -128,7 +132,7 @@ header {
 
 .container-hero {
   background-color: #f5f5f5;
-  opacity: 0.4;
+  opacity: 0.7;
   padding: 2em;
   width: 50%;
   margin: 0 auto;
@@ -164,6 +168,7 @@ header,
 .attraction-img:hover {
   transform: scale(1.2);
 }
+
 .tour-guide-profiles img {
   height: 25rem;
   width: 25rem;
