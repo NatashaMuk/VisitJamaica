@@ -120,8 +120,8 @@ img {
 header {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(53, 82, 66, 0.5),
-      rgba(47, 80, 63, 0.6)
+      rgba(82, 81, 122, 0.5),
+      rgba(86, 84, 134, 0.6)
     ),
     url("hero.jpg");
   background-size: cover;
