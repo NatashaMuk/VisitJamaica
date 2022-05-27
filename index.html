@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
 
     <!-- css stylesheet -->
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
 
     <!-- font awesome -->
     <script
@@ -22,26 +22,53 @@
   </head>
 
   <body>
+
+    <!-- /********************HEADER NAVBAR & HERO***************************/ -->
+    
     <header>
-      <div class="container-hero" id="container-hero">
-        <div class="container-hero-content">
-          <h1><span class="accent-letter">J</span>amaica</h1>
-          <p>
-            enjoy vibrant reef-lined beaches to mountainous terrain. Discover
-            the unforgettable beauty of island life.
-          </p>
-        </div>
-      </div>
-    </header>
+      <navbar >
+        <ul class="nav-items">
+          <li class="nav-item"><a class="nav-links" href="#">Home</a></li>
+          <li class="nav-item"> <a class="nav-links" href="#attractions">Attractions</a></li>
+          <li class="nav-item"><a class="btn btn-cta" href="#footer">Contact Us</a></li>
+        </ul>       
+      </navbar>              
+    </header>  
+
+    <!-- /********************END HEADER***************************/ -->
 
     <main>
+
+       <!-- /********************HERO SECTION***************************/ -->
+      <section class="hero-section">
+      <div class="container-hero hero-text" id="hero">      
+        <h1>Visit<span class="accent-text"> Jamaica</span></h1>
+        <p>
+          enjoy vibrant reef-lined beaches to mountainous terrain. Discover
+          the unforgettable beauty of island life.
+        </p>
+        <a class="btn btn-hero btn-dark" href="#attractions"> Explore </a>
+        <a class="btn btn-hero btn-light" href="#footer">Subscribe</a>
+    </div> 
+  </section>
+       <!-- /********************END OF HERO SECTION***************************/ -->
+
+
+      <!-- /********************ATTRACTION SECTION***************************/ -->
       <div class="container attraction-subheading">
         <span class="attractions-title-tag title-tag">Top Attractions</span>
         <h2>What to do in Jamaica</h2>
       </div>
-      <section class="attractions container" id="attractions">
-        <div class="opaque-bg">
+      <section class="attractions" id="attractions">
+        <div class="opaque-bg container">
           <div class="container grid-2-col">
+            <div class="img-box container">
+              <img
+                class="attraction-img river-rafting-img"
+                src="river-rafting.jpg"
+                alt=" a man with his back to the camera,rowing a Bamboo raft on the river"
+              />
+            </div>
             <div>
               <p class="attraction-number">01</p>
               <h3>River Rafting</h3>
@@ -51,20 +78,13 @@
                 day trip to remember!
               </p>
             </div>
-            <div class="img-box container">
-              <img
-                class="attraction-img river-rafting-img"
-                src="river-rafting.jpg"
-                alt=" a man with his back to the camera,rowing a Bamboo raft on the river"
-              />
-            </div>
 
             <div>
               <p class="attraction-number">02</p>
               <h3>Dunn's River Fall</h3>
               <p>
                 Climb the natural tier of this picturesque waterfall, that
-                cascades into the sea. After this, relax and enjoy the white
+                cascades into the sea.After this, relax and enjoy the white
                 sandy beaches nearby.
               </p>
             </div>
@@ -77,15 +97,6 @@
               />
             </div>
 
-            <div>
-              <p class="attraction-number">03</p>
-              <h3>Blue Mountain</h3>
-              <p>
-                Home to over 800 tropical species and the world's second largest
-                butterfly. Take a two day trip to the highest peak to see the breathtaking views.
-              </p>
-            </div>
-
             <div class="img-box container">
               <img
                 class="attraction-img"
@@ -93,9 +104,23 @@
                 alt="a view of the Blue Mountain from a distance, showing the lush greenery leading up to the mountain peaks"
               />
             </div>
+
+            <div>
+              <p class="attraction-number">03</p>
+              <h3>Blue Mountain</h3>
+              <p>
+                Home to over 800 tropical species and the worlds second largest
+                butterfly. Take a two day trip to the highest peak to see
+                thriling views.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+       <!-- /********************END OF ATTRACTION SECTION***************************/ -->
+
+
+        <!-- /********************TOUR GUIDE SECTION***************************/ -->
 
       <section class="tour-guides" id="tour-guides">
         <div class="container">
@@ -138,27 +163,39 @@
               />
             </div>
             <blockquote>
-              "hey there, I'm Kayla. I have lived here all my life. I can
-              show you the hidden gems and culture of island life."
+              "hey there, I'm Kayla. I have lived here all my life. I can show
+              you the hidden gems and culture of island life"
             </blockquote>
           </div>
         </div>
       </section>
+       <!-- /********************END OF TOUR GUIDE SECTION***************************/ -->
     </main>
   </body>
 
-  <footer class="container">
-    <div class="footer-nav">
-      <a href="#attractions">Attractions</a>
-      <a href="#tour-guides">Meet the Team</a>
-      <a href="#container-hero">Contact Us</a>
+ <!-- /********************FOOTER SECTION***************************/ -->
+  <footer id ="footer">
+    <div class="container signup-wrapper">
+      <div class="signup">
+        <p class="signup-title">Sign Me up</p>
+        <p class="signup-text">Be the first to know about our exclusive deals.</p>
+      </div>
+
+      <form action="#" class=""signup-form>
+        <input class="signup-input" type="text" placeholder="Name" aria-label="Enter Name" required/>
+        <input class="signup-input"type="email" placeholder="Email" aria-label="Enter Email" required/>
+        <button type="submit" class="signup-btn fas fa-arrow-right"></button>
+      
+      </form>
     </div>
-    <div>
+    <div class="social-media-icons">
       <i class="fab fa-twitter-square fa-2x social-icon"></i>
       <i class="fab fa-facebook-square fa-2x social-icon"></i>
       <i class="fab fa-instagram-square fa-2x social-icon"></i>
       <i class="fas fa-envelope fa-2x social-icon"></i>
-      <p class="copyright">© Copyright 2022 Visit Jamaica</p>
+      <p class="copyright">© Copyright 2022 Made with ❤</p>
     </div>
-  </footer>
+  </div>
+    </footer>
+   <!-- /********************END OF FOOTER***************************/ -->
 </html>
