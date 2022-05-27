@@ -32,7 +32,18 @@
           <li class="nav-item"> <a class="nav-links" href="#attractions">Attractions</a></li>
           <li class="nav-item"><a class="btn btn-cta" href="#footer">Contact Us</a></li>
         </ul>       
-      </navbar>              
+      </navbar> 
+      <section class="hero-section">
+        <div class="container-hero hero-text" id="hero">      
+          <h1>Visit<span class="accent-text"> Jamaica</span></h1>
+          <p>
+            enjoy vibrant reef-lined beaches to mountainous terrain. Discover
+            the unforgettable beauty of island life.
+          </p>
+          <a class="btn btn-hero btn-dark" href="#attractions"> Explore </a>
+          <a class="btn btn-hero btn-light" href="#footer">Subscribe</a>
+      </div> 
+    </section>             
     </header>  
 
     <!-- /********************END HEADER***************************/ -->
@@ -40,7 +51,7 @@
     <main>
 
        <!-- /********************HERO SECTION***************************/ -->
-      <section class="hero-section">
+      <!-- <section class="hero-section">
       <div class="container-hero hero-text" id="hero">      
         <h1>Visit<span class="accent-text"> Jamaica</span></h1>
         <p>
@@ -50,7 +61,7 @@
         <a class="btn btn-hero btn-dark" href="#attractions"> Explore </a>
         <a class="btn btn-hero btn-light" href="#footer">Subscribe</a>
     </div> 
-  </section>
+  </section> -->
        <!-- /********************END OF HERO SECTION***************************/ -->
 
 
@@ -62,42 +73,42 @@
       <section class="attractions" id="attractions">
         <div class="opaque-bg container">
           <div class="container grid-2-col">
-            <div class="img-box container">
+            <div class="img-box">
               <img
                 class="attraction-img river-rafting-img"
                 src="river-rafting.jpg"
                 alt=" a man with his back to the camera,rowing a Bamboo raft on the river"
               />
             </div>
-            <div>
+            <div >
               <p class="attraction-number">01</p>
-              <h3>River Rafting</h3>
-              <p>
+              <h3 >River Rafting</h3>
+              <p class="attraction-content">
                 Your visit wouldn't be complete, until you experience Jamaica
                 River-Rafting adventure from a 30-foot (9 meter) Bamboo raft. A
                 day trip to remember!
               </p>
             </div>
 
-            <div>
+            <div class="falls-text">
               <p class="attraction-number">02</p>
-              <h3>Dunn's River Fall</h3>
-              <p>
+              <h3 >Dunn's River Fall</h3>
+              <p class="attraction-content m-btm">
                 Climb the natural tier of this picturesque waterfall, that
                 cascades into the sea.After this, relax and enjoy the white
                 sandy beaches nearby.
               </p>
             </div>
 
-            <div class="img-box container">
+            <div class="img-box falls-img">
               <img
-                class="attraction-img"
+                class="attraction-img "
                 src="dunns-river-falls.jpg"
                 alt="a crystal clear water fall,cascading over large rocks"
               />
             </div>
 
-            <div class="img-box container">
+            <div class="img-box ">
               <img
                 class="attraction-img"
                 src="blue-mountains.jpg"
@@ -105,10 +116,10 @@
               />
             </div>
 
-            <div>
+            <div >
               <p class="attraction-number">03</p>
-              <h3>Blue Mountain</h3>
-              <p>
+              <h3 >Blue Mountain</h3>
+              <p class="attraction-content" >
                 Home to over 800 tropical species and the worlds second largest
                 butterfly. Take a two day trip to the highest peak to see
                 thriling views.
@@ -174,8 +185,9 @@
   </body>
 
  <!-- /********************FOOTER SECTION***************************/ -->
-  <footer id ="footer">
-    <div class="container signup-wrapper">
+  <footer class="container" id ="footer">
+    <div class="signup-wrapper">
+
       <div class="signup">
         <p class="signup-title">Sign Me up</p>
         <p class="signup-text">Be the first to know about our exclusive deals.</p>
@@ -185,16 +197,18 @@
         <input class="signup-input" type="text" placeholder="Name" aria-label="Enter Name" required/>
         <input class="signup-input"type="email" placeholder="Email" aria-label="Enter Email" required/>
         <button type="submit" class="signup-btn fas fa-arrow-right"></button>
-      
       </form>
+
     </div>
-    <div class="social-media-icons">
-      <i class="fab fa-twitter-square fa-2x social-icon"></i>
-      <i class="fab fa-facebook-square fa-2x social-icon"></i>
-      <i class="fab fa-instagram-square fa-2x social-icon"></i>
-      <i class="fas fa-envelope fa-2x social-icon"></i>
-      <p class="copyright">© Copyright 2022 Made with ❤</p>
-    </div>
+
+      <div class="social-media-icons">
+        <i class="fab fa-twitter-square fa-2x social-icon"></i>
+        <i class="fab fa-facebook-square fa-2x social-icon"></i>
+        <i class="fab fa-instagram-square fa-2x social-icon"></i>
+        <i class="fas fa-envelope fa-2x social-icon"></i>
+        <p class="copyright">© Copyright 2022 Made with ❤</p>
+      </div>
+
   </div>
     </footer>
    <!-- /********************END OF FOOTER***************************/ -->
