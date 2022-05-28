@@ -139,7 +139,7 @@ header {
       rgba(81, 119, 122, 0.5),
       rgba(57, 55, 107, 0.6)
     ),
-    url("../images/hero.jpg");
+    url("images/hero.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
